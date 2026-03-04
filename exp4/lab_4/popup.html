@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop up box</title>
+</head>
+<body>
+    <script>
+        function ShowAlert(){
+            alert("This is an alert box");
+        }
+        function ShowConfirm(){
+            var result = confirm("Do u want to continue");
+        
+        if(result){
+            document.getElementById("output").innerHTML="User Clicked ok";
+        }
+        else{
+            document.getElementById("output").innerHTML="user clicked cancel";
+        }
+    }
+    function ShowPrompt()
+    {
+        var name = prompt("Enter your name");
+        if(name!=null){
+            document.getElementById("output").innerHTML="Hello "+ name;
+        }
+        else{
+            document.getElementById("output").innerHTML="Name cannot be Empty";
+        }
+    }
+</script>
+    <h2>Pop Up</h2>
+    <button  onclick = "ShowAlert()">Alert</button>
+    <button  onclick = "ShowConfirm()">Confirm</button>
+    <button  onclick = "ShowPrompt()">Prompt</button>
+    <p id="output"></p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+</tr>
+<!-- Catalogue content -->
+<tr>
+<td>
+CSE<br>ECE<br>EEE<br>CIVIL
+</td>
+<td>
+<img src="webtech1.pg">	
+<img src="jsp.jpg">
+<img src="webtech2.jpg">
+</td>
+<td>
+<b>Book:</b> Web Technologies<br>
+<b>Author:</b> Kogent<br>
+<b>Publication:</b> Dreamtech Press
+<br><br>
+<b>Book:</b> JSP Complete Reference<br>
+<b>Author:</b> Phil Hanna<br>
+<b>Publication:</b> McGraw Hill
+<br><br>
+<b>Book:</b> Web Technologies<br>
+<b>Author:</b> Uttam K. Roy<br>
+<b>Publication:</b> Oxford Higher Ed
+</td>
+<td>
+$50<br><br><br>
+$28.5<br><br><br>
+$40
+</td>
+<td>
+<button class="cart-btn">Add to Cart</button><br><br><br>
+<button class="cart-btn">Add to Cart</button><br><br><br>
+<button class="cart-btn">Add to Cart</button>
+</td>
+</tr>

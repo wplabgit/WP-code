@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Alert</title>
+
+     <script>
+        function showAlert(){
+            alert("This is an alert box");
+        }
+
+        function showconform(){
+            var result= confirm("Do You want to continue");
+
+            if(result){
+                document.getElementById("output").innerHTML="User clicked ok";
+            }
+            else{
+                document.getElementById("output").innerHTML="User clicked cancel";
+            }
+        }
+
+        function showprompt(){
+            var name=prompt("Enter your name");
+
+            if(name!=null){
+                document.getElementById("output").innerHTML="Hello "+name;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    
+    <button onclick="showAlert()">Alert</button>
+    <button onclick="showconform()">Confirm</button>
+    <button onclick="showprompt()">prompt</button>
+    <p id="output"></p>
+</body>
+</html>
