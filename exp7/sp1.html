@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <style> 
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; 
+padding: 40px; } 
+        .car-card { 
+            background: #fff; 
+            max-width: 350px; 
+            margin: auto; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+            overflow: hidden; 
+            border: 1px solid #dee2e6; 
+        } 
+        .car-header { background: #343a40; color: #fff; padding: 15px; text-align: 
+center; } 
+        .car-body { padding: 20px; text-align: center; } 
+        .car-age { font-size: 1.2rem; color: #28a745; font-weight: bold; margin-top: 10px; } 
+        .method-label { font-size: 0.8rem; color: #6c757d; font-style: italic; } 
+    </style> 
+</head> 
+<body> 
+ 
+<div class="car-card"> 
+    <div class="car-header"> 
+        <h2 id="carTitle" style="margin:0;"></h2> 
+    </div> 
+    <div class="car-body"> 
+        <div class="method-label">Result of .getAge() method:</div> 
+        <div id="carAge" class="car-age"></div> 
+    </div> 
+</div> 
+ 
+<script> 
+    // 1. Defining the Class 
+    class Vehicle { 
+        // The constructor initializes the object properties 
+        constructor(brand, model, year) { 
+            this.brand = brand; 
+            this.model = model; 
+            this.year = year; 
+        } 
+ 
+        // A Method to calculate the car's age 
+        getAge() { 
+            const currentYear = new Date().getFullYear(); 
+            return currentYear - this.year; 
+        } 
+ 
+        // A Method to return the full name 
+ 
+  
+
+ 
+        getFullName() { 
+            return `${this.brand} ${this.model}`; 
+        } 
+    } 
+ 
+    // 2. Creating an instance (Object) of the class 
+    const myCar = new Vehicle("Tesla", "Model 3", 2020); 
+ 
+    // 3. Calling the methods and displaying data 
+    document.getElementById('carTitle').innerText = myCar.getFullName(); 
+    document.getElementById('carAge').innerText = `${myCar.getAge()} Years Old`; 
+</script> 
+ 
+</body> 
+</html>
